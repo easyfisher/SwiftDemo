@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99F7DA86544528EFC7CCC11D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3660A8A070521DFB12D77F /* libPods.a */; };
+		4BBD4B0D414AD6822ACFF598 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AF3C3C5B893F5102342BDF /* Pods.framework */; };
 		A7C6528E1C26C13B0058D626 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */; };
 		A7C652921C26C70D0058D626 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C652911C26C70D0058D626 /* MainViewController.swift */; };
 		A7C652951C26D8590058D626 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C652941C26D8590058D626 /* HomeViewController.swift */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54AF3C3C5B893F5102342BDF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		A7C652911C26C70D0058D626 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Source/MainViewController.swift; sourceTree = "<group>"; };
 		A7C652941C26D8590058D626 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Source/HomeViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		A7CA576A1C2693410063D31E /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7CA576D1C26A37A0063D31E /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = Source/AppSettings.swift; sourceTree = "<group>"; };
 		CA305D390A993DA72E850370 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		CF3660A8A070521DFB12D77F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC0159BE0D669C10BEF9F7C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F7DA86544528EFC7CCC11D /* libPods.a in Frameworks */,
+				4BBD4B0D414AD6822ACFF598 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		57EBE60428B479CBE6CC65B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF3660A8A070521DFB12D77F /* libPods.a */,
+				54AF3C3C5B893F5102342BDF /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -517,6 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easter.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easter.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

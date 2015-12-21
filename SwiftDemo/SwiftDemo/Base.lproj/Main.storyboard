@@ -231,6 +231,7 @@
                     </view>
                     <connections>
                         <outlet property="passWordField" destination="CTc-Or-npS" id="F0l-Zt-Fyf"/>
+                        <outlet property="signInButton" destination="ylF-me-wfF" id="i25-XO-fxx"/>
                         <outlet property="userNameField" destination="qNg-Cm-Qu8" id="L90-G4-yer"/>
                     </connections>
                 </viewController>

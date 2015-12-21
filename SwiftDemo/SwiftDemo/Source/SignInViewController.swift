@@ -10,6 +10,7 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passWordField: UITextField!
     
@@ -30,10 +31,12 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInDidTap(sender: AnyObject) {
+        self.signInButton.userInteractionEnabled = false
         let username = userNameField.text
         let password = passWordField.text
         if username != nil && password != nil {
             WebService.sharedInstance.signIn(username!, passWord: password!) {success in
+                self.signInButton.userInteractionEnabled = true
                 if success {
                     MainViewController.sharedInstance.showHomeView()
                 }
