@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="F5T-6j-u3a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -208,10 +208,15 @@
                                             </attributedString>
                                         </state>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="FNZ-2z-D9a">
+                                        <rect key="frame" x="290" y="241" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="FNZ-2z-D9a" firstAttribute="centerX" secondItem="ylF-me-wfF" secondAttribute="centerX" id="Kjp-aa-LsQ"/>
                                     <constraint firstAttribute="trailing" secondItem="uhX-HE-b80" secondAttribute="trailing" id="NR0-nF-FUP"/>
+                                    <constraint firstItem="FNZ-2z-D9a" firstAttribute="centerY" secondItem="ylF-me-wfF" secondAttribute="centerY" id="c6M-sB-aug"/>
                                     <constraint firstItem="ylF-me-wfF" firstAttribute="top" secondItem="uhX-HE-b80" secondAttribute="bottom" constant="30" id="hiE-as-Jzx"/>
                                     <constraint firstItem="uhX-HE-b80" firstAttribute="leading" secondItem="bJM-XW-3VH" secondAttribute="leading" id="iGN-HG-snF"/>
                                     <constraint firstItem="ylF-me-wfF" firstAttribute="centerX" secondItem="bJM-XW-3VH" secondAttribute="centerX" id="kB4-1k-h0R"/>
@@ -230,6 +235,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="FNZ-2z-D9a" id="rc6-Zw-g1H"/>
                         <outlet property="passWordField" destination="CTc-Or-npS" id="F0l-Zt-Fyf"/>
                         <outlet property="signInButton" destination="ylF-me-wfF" id="i25-XO-fxx"/>
                         <outlet property="userNameField" destination="qNg-Cm-Qu8" id="L90-G4-yer"/>
