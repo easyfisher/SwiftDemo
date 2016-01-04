@@ -11,7 +11,7 @@ import ObjectMapper
 
 class UserInfoModel: Mappable {
     var userName: String?
-    var userIdd: String?
+    var userId: String?
     
     required init?(_ map: Map) {
         
@@ -19,6 +19,6 @@ class UserInfoModel: Mappable {
     
     func mapping(map: Map) {
         userName    <- map["userName"]
-        userIdd     <- map["userId"]
+        userId     <- map["userId"]
     }
 }

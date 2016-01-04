@@ -17,9 +17,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setUpTableView()
         self.view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
-//        self.view.backgroundColor = UIColor.blueColor()
+        
+        setUpTableView()
+        loadData()
     }
     
     func setUpTableView() {
@@ -30,6 +31,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.tableHeaderView?.frame.size.height = self.view.bounds.width * 120/320
         
         tableView.registerNib(UINib(nibName: "CourseCell", bundle: nil), forCellReuseIdentifier: HomeViewController.CellIdentifier)
+    }
+    
+    func loadData() {
+        WebService.sharedInstance.getAllCourses() { success in
+            
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
