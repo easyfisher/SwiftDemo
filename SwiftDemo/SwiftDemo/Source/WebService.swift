@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class WebService: AFHTTPSessionManager {
     static let sharedInstance = WebService()
@@ -20,9 +21,10 @@ class WebService: AFHTTPSessionManager {
         let path = ServiceBaseUrl + PathSignIn
         
         self.POST(path, parameters: params, success: {(task: NSURLSessionDataTask, responseObject: AnyObject?) -> Void in
-            print("succeeded signing in with userName: \(userName)")
+            print("succeeded signing in with userName: \(userName) response: \(responseObject)")
             AppSettings.sharedInstance.username = userName
             AppSettings.sharedInstance.password = passWord
+            let user = Mapper<UserInfoModel>().map(responseObject)
             completion(success: true)
         }, failure: {(task: NSURLSessionDataTask?, error: NSError) -> Void in
             let alertView = UIAlertView(title: "Unable to sign in", message: "", delegate: nil, cancelButtonTitle: "OK")

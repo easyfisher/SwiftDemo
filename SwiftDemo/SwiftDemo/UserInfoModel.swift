@@ -7,11 +7,18 @@
 //
 
 import Foundation
-class UserInfoModel {
+import ObjectMapper
+
+class UserInfoModel: Mappable {
     var userName: String?
     var userIdd: String?
     
-    static func modelCustomPropertyMapper() -> NSDictionary {
-        return ["userName": "userName", "userIdd": "userId"]
+    required init?(_ map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        userName    <- map["userName"]
+        userIdd     <- map["userId"]
     }
 }
