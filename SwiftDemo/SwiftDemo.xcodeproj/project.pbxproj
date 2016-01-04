@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4BBD4B0D414AD6822ACFF598 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AF3C3C5B893F5102342BDF /* Pods.framework */; };
+		A778A2A11C3A105500558F4C /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A778A2A01C3A105500558F4C /* CourseCell.xib */; };
+		A778A2A31C3A119300558F4C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778A2A21C3A119300558F4C /* CourseCell.swift */; };
 		A7C6528E1C26C13B0058D626 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */; };
 		A7C652921C26C70D0058D626 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C652911C26C70D0058D626 /* MainViewController.swift */; };
 		A7C652951C26D8590058D626 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C652941C26D8590058D626 /* HomeViewController.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		54AF3C3C5B893F5102342BDF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778A2A01C3A105500558F4C /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
+		A778A2A21C3A119300558F4C /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseCell.swift; path = Source/CourseCell.swift; sourceTree = "<group>"; };
 		A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		A7C652911C26C70D0058D626 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Source/MainViewController.swift; sourceTree = "<group>"; };
 		A7C652941C26D8590058D626 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Source/HomeViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */,
 				A7C652911C26C70D0058D626 /* MainViewController.swift */,
 				A7C652941C26D8590058D626 /* HomeViewController.swift */,
+				A778A2A01C3A105500558F4C /* CourseCell.xib */,
+				A778A2A21C3A119300558F4C /* CourseCell.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				A7CA57381C2666480063D31E /* LaunchScreen.storyboard in Resources */,
 				A7CA57351C2666480063D31E /* Assets.xcassets in Resources */,
 				A7CA57331C2666480063D31E /* Main.storyboard in Resources */,
+				A778A2A11C3A105500558F4C /* CourseCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +377,7 @@
 				A7C652921C26C70D0058D626 /* MainViewController.swift in Sources */,
 				A7C6528E1C26C13B0058D626 /* UserInfoModel.swift in Sources */,
 				A7CA57641C266F3A0063D31E /* SignInViewController.swift in Sources */,
+				A778A2A31C3A119300558F4C /* CourseCell.swift in Sources */,
 				A7C652951C26D8590058D626 /* HomeViewController.swift in Sources */,
 				A7CA57621C266E840063D31E /* LaunchViewController.swift in Sources */,
 				A7CA57691C267E900063D31E /* WebService.swift in Sources */,
