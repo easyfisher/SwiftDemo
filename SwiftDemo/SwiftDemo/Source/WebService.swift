@@ -27,12 +27,18 @@ class WebService: AFHTTPSessionManager {
             print("succeeded signing in with userName: \(userName) response: \(responseObject)")
             AppSettings.sharedInstance.username = userName
             AppSettings.sharedInstance.password = passWord
-            self.user = Mapper<UserInfoModel>().map(responseObject)
-            completion(success: true)
+            if let dic = responseObject as? Dictionary<String, AnyObject> {
+                self.user = UserInfoModel(dictionary: dic)
+                completion(success: true)
+            } else {
+                let alertView = UIAlertView(title: "Unable to sign in", message: "", delegate: nil, cancelButtonTitle: "OK")
+                alertView.show()
+                completion(success: false)
+            }
         }, failure: {(task: NSURLSessionDataTask?, error: NSError) -> Void in
-            let alertView = UIAlertView(title: "Unable to sign in", message: "", delegate: nil, cancelButtonTitle: "OK")
-            alertView.show()
-            completion(success: false)
+                let alertView = UIAlertView(title: "Unable to sign in", message: "", delegate: nil, cancelButtonTitle: "OK")
+                alertView.show()
+                completion(success: false)
         })
     }
     

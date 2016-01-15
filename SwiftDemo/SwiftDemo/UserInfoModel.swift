@@ -9,16 +9,12 @@
 import Foundation
 import ObjectMapper
 
-class UserInfoModel: Mappable {
+class UserInfoModel {
     var userName: String?
     var userId: String?
     
-    required init?(_ map: Map) {
-        
-    }
-    
-    func mapping(map: Map) {
-        userName    <- map["userName"]
-        userId     <- map["userId"]
+    init(dictionary: Dictionary<String, AnyObject>) {
+        userName = dictionary["userName"] as? String
+        userId = dictionary["userId"] as? String
     }
 }

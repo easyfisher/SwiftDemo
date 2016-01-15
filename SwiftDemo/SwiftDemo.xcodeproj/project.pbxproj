@@ -178,17 +178,25 @@
 		A7CA575B1C266DC10063D31E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A7D540B91C48E25200F4793D /* Model */,
 				A7CA57611C266E840063D31E /* LaunchViewController.swift */,
 				A7CA57631C266F3A0063D31E /* SignInViewController.swift */,
 				A7CA57681C267E900063D31E /* WebService.swift */,
 				A7CA576D1C26A37A0063D31E /* AppSettings.swift */,
-				A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */,
 				A7C652911C26C70D0058D626 /* MainViewController.swift */,
 				A7C652941C26D8590058D626 /* HomeViewController.swift */,
 				A778A2A01C3A105500558F4C /* CourseCell.xib */,
 				A778A2A21C3A119300558F4C /* CourseCell.swift */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		A7D540B91C48E25200F4793D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7C6528D1C26C13B0058D626 /* UserInfoModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
